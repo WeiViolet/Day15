@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{
+	int n,i=1,a=0;
+	scanf("%d",&n);
+	while(i<=n/2)
+	{
+		if(n%i==0)
+		a+=1;
+		i++;
+	}
+	if(a==1)
+	printf("PRIME");
+	else
+	printf("NON-PRIME");
+	
+}
