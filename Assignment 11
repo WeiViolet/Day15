@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+	int n,t,r,sum;
+	scanf("%d",&n);
+	t=n;
+	while(n!=0)
+	{ 
+		r=n%10;
+		sum+=r*r*r;
+		n/=10;
+	}
+	 if(sum==t)
+	 {
+	 	printf("ARMSTRONG");
+	 }
+	 else
+	 {
+	 	printf("NON-ARMSTRONG");
+	 }
+}
