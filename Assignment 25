@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+	int n,i,j,m,f=0,c=0;
+	scanf("%d%d",&n,&m);
+	for(i=n;i<=m;i++)
+	{	
+		f=0;
+		for(j=1;j<=i;j++)
+		{
+			if(i%j==0)
+			f++;
+		}
+		{
+		if(f==2)
+		c++;
+		}
+	}
+	printf("the no.of prime numbers between %d and %d is %d",n,m,c);
+}
