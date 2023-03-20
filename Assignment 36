@@ -1,0 +1,23 @@
+#include<stdio.h>
+int sum(int n,int m); int diff(int n,int m); int pro(int n,int m); int rem(int n,int m); int quo(int n,int m);
+main()
+{
+	int n,m,s,d,p,r,q;
+	scanf("%d%d",&n,&m);
+	s=sum(n,m);
+	d=diff(n,m);
+	p=pro(n,m);
+	r=rem(n,m);
+	q=quo(n,m);
+	printf("sum=%d\ndiff=%d\npro=%d\nrem=%d\nquo=%d\n",s,d,p,r,q);
+}
+int sum(int n,int m) 	
+{	return n+m;	}
+int diff(int n,int m)  
+ {	return n-m;	}
+int pro(int n,int m) 	
+{	return n*m;	}
+int rem(int n,int m) 
+{	return n%m;	}
+int quo(int n,int m)	
+{	return n/m;	}
