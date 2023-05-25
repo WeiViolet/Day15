@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+	int n,i,e,c=0;
+	printf("Enter size: ");
+	scanf("%d",&n);
+	char str[n],r[n];
+	printf("Enter the string: ");
+	scanf("%s",str);
+	while(str[c]!='\0')
+	c++;
+	e=c-1;
+	for(i=0;i<c;i++)
+	{
+		r[i]=str[e];
+		e--;
+	}	
+	r[i]='\n';
+	printf("String = %s\nReverse string = %s",str,r);
+}
