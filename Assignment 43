@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+	int i,lc=0,splch=0,uc=0,num=0;
+	char str[1000];
+	printf("Enter string : ");
+	scanf("%s",str);
+		for(i=0;str[i]!='\0';i++)
+		{
+			if(str[i]>='a' && str[i]<='z')
+			{	lc++;	}
+			else if(str[i]>='A' && str[i]<='Z')
+			{	uc++;	}
+			else if(str[i]>='0' && str[i]<='9')
+			{	num++;	}
+			else
+			{	splch++;	}
+		}
+	printf("The no. of lower case letters are %d\n",lc);
+	printf("The no. of special characters are %d",splch);
+}
